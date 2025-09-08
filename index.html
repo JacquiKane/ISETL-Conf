@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>21st Century Toolkit for IT Grads</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .purdue-header {
+      background-color: #cba135; /* Purdue Gold */
+      color: #000000; /* Purdue Black */
+      padding: 2rem;
+      text-align: center;
+    }
+    .key-findings {
+      background-color: #ffffff;
+      border: 3px solid #cba135;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .discussion-section {
+      background-color: #eaeaea;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-left: 5px solid #cba135;
+    }
+    .poll-links a {
+      display: block;
+      margin-bottom: 1rem;
+      color: #cba135;
+      font-weight: bold;
+    }
+    
+  .subtitle {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: flyIn 1.2s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes flyIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+    body {
+      background-color: #f5f5f5;
+    }
+    .nav-tabs .nav-link {
+      border: 1px solid #cba135;
+      background-color: #fff;
+      color: #000;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #cba135;
+      color: #fff;
+    }
+    .tab-content {
+      border: 1px solid #cba135;
+      border-top: none;
+      background-color: #fff;
+      padding: 1.5rem;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="purdue-header">
+    <h1>21st Century Toolkit for IT Grads</h1>
+  <h4 class="subtitle text-warning mt-3">Preparing Students with Technical Acumen, AI Awareness and Interpersonal Competence</h4>
+
+  </div>
+
+  <div class="container">
+    <!-- Key Findings Section -->
+    <div class="key-findings">
+      <h2 class="text-center mb-4">🔍 Key Findings</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">There is widespread, but not 100%, adoption of AI technologies across software development companies (70%)</li>
+        <li class="list-group-item">There is a strong concurrent need for engineering graduates to possess robust interpersonal and business skills</li>
+        <li class="list-group-item">There is a need for our graduates to use modern tooling, including AI,  effectively,  to improve productivity </li>
+      </ul>
+    </div>
+    <div class="container mt-5">
+  <h3 class="mb-4">🧠 Key Employer Questions </h3>
+
+  <!-- Tab Navigation -->
+  <ul class="nav nav-tabs" id="questionTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="softwaredev-tab" data-bs-toggle="tab" data-bs-target="#softwaredev" type="button" role="tab" aria-controls="softwaredev" aria-selected="true">Software Development Skills</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="ai_softwarecareers-tab" data-bs-toggle="tab" data-bs-target="#ai_softwarecareers" type="button" role="tab" aria-controls="ai_softwarecareers" aria-selected="false">Impact of AI, Software Development Careers</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="ai_productdesign-tab" data-bs-toggle="tab" data-bs-target="#ai_productdesign" type="button" role="tab" aria-controls="hiring" aria-selected="false">Impact of AI, Product Design Process</button>
+    </li>
+        <li class="nav-item" role="presentation">
+      <button class="nav-link" id="ai_existingcodebases-tab" data-bs-toggle="tab" data-bs-target="#ai_existingcodebases" type="button" role="tab" aria-controls="hiring" aria-selected="false">Impact of AI, Existing Code Bases</button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content" id="questionTabsContent">
+
+    <!-- software development Skills -->
+    <div class="tab-pane fade show active" id="softwaredev" role="tabpanel" aria-labelledby="softwaredev-tab">
+      <ul>
+ <li>
+    <div class="d-flex justify-content-between align-items-center">
+      <span>Do you use AI to develop or to maintain software, in your organization?</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 70%; background-color: #cba135;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          70%
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+         <div class="d-flex justify-content-between align-items-center">
+      <span>Do you have an in-house AI engine?</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 43%; background-color: #cba135;" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100">
+          43%
+        </div>
+      </div>
+    </div>
+    </li>
+        <li>What assists do your developers use?<!-- Modal Trigger Button -->
+          <button type="button" class="btn btn-sm btn-warning ms-2" data-bs-toggle="modal" data-bs-target="#assistsModal">
+            More Info
+          </button>
+</li>
+ <li>
+    <div class="d-flex justify-content-between align-items-center">
+      <span>Do your developrs trust AI generated code?</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 48.6%; background-color: #cba135;" aria-valuenow="48.6" aria-valuemin="0" aria-valuemax="100">
+          48.6%
+        </div>
+      </div>
+    </div>
+  </li>
+       <li>
+    <div class="d-flex justify-content-between align-items-center">
+      <span>Do you believe that AI has made a positive impact on the software development process?</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #cba135;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          80%
+        </div>
+      </div>
+    </div>
+  </li>
+                <li>
+    <div class="d-flex justify-content-between align-items-center">
+      <span>Do you believe that AI has made a negative impact on the software development process?</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 28.6%; background-color: #cba135;" aria-valuenow="28.6" aria-valuemin="0" aria-valuemax="100">
+          28.6%
+        </div>
+      </div>
+    </div>
+  </li>
+
+
+              </ul>
+    </div>
+
+    <!-- ai impact on software careers -->
+    <div class="tab-pane fade" id="ai_softwarecareers" role="tabpanel" aria-labelledby="ai_softwarecareers">
+      <ul>
+        <li>Do you believe that AI generated code will decrease the need for software developers in your company?</li>
+         <li>
+    <div class="d-flex justify-content-between align-items-center">
+      <span>Do you believe that AI generated code will decrease the need for software developers in your company?</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 67%; background-color: #cba135;" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+          67%
+        </div>
+      </div>
+    </div>
+  </li>
+        <li>What do you envision is the role for your software developers as AI progresses?</li>
+
+         <li>
+    <div class="d-flex justify-content-between align-items-center">
+      <span>Do you believe that software developers are more productive as a result of using AI?</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #cba135;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          80%
+        </div>
+      </div>
+    </div>
+  </li>
+        
+      </ul>
+    </div>
+
+    <!-- ai impact on product design -->
+    <div class="tab-pane fade" id="ai_productdesign" role="tabpanel" aria-labelledby="ai_productdesign-tab">
+      <ul>
+        <li>Considering a new product or service, how is the UI/UX design phase impacted by AI?</li>
+
+          <li>
+    <div class="d-flex justify-content-between align-items-center">
+      <span>Do you believe that you can use AI to translate client requirements into tasks in the software development process??</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 67%; background-color: #cba135;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+          67%
+        </div>
+      </div>
+    </div>
+  </li>
+        <li>How would you describe the role of your developers in terms of product design or modification?<!-- Modal Trigger Button -->
+          <button type="button" class="btn btn-sm btn-warning ms-2" data-bs-toggle="modal" data-bs-target="#devroleModal">
+            More Info
+          </button></li>
+      </ul>
+    </div>
+
+     <!-- ai impact on existing code bases -->
+    <div class="tab-pane fade" id="ai_existingcodebases" role="tabpanel" aria-labelledby="ai_existingcodebases-tab">
+      <ul>
+<li>
+    <div class="d-flex justify-content-between align-items-center">
+      <span>Sometimes applications developed years ago are still in use today. Does your organization have responsibility for such a legacy code base?</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 83%; background-color: #cba135;" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+          83%
+        </div>
+      </div>
+    </div>
+  </li>
+        <li>Do your developers use AI to maintain legacy code bases?</li>
+        <li>
+    <div class="d-flex justify-content-between align-items-center">
+      <span>Do your developers use AI to maintain legacy code bases?</span>
+      <div class="progress" style="width: 200px; height: 20px;">
+        <div class="progress-bar" role="progressbar" style="width: 0%; background-color: #cba135;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="">
+          0%
+        </div>
+      </div>
+    </div>
+  </li>
+      </ul>
+    </div>
+  </div>
+
+
+<!-- Trigger Button -->
+<div class="text-center mt-5">
+  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#aiConcernsModal">
+    View Employer Concerns About AI
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="aiConcernsModal" tabindex="-1" aria-labelledby="aiConcernsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content border-warning">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="aiConcernsLabel">📉 Employer Concerns About AI in the Workplace</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">⚠️ Compromise of new product concepts, via insecure cloud storage of developer questions</li>
+          <li class="list-group-item">🔐 Developer over-reliance on AI generated code, loss of ability to discern issues and develop code without AI</li>
+          <li class="list-group-item">📉 Problems introduced into the code base as a result of AI</li>
+          <li class="list-group-item">🧠 Code bloat, as a result of acceoted/unquestioned AI generated code</li>
+          <li class="list-group-item">💼 Injection of malicious code</li>
+        </ul>
+        <hr>
+        <p class="text-muted">These concerns were gathered from interviews with hiring managers across Indianpolis area Purde graduate employers and industry board.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <h3 class="mb-4">💼 Top Soft Skills Employers Value</h3>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+    <!-- Gold Trophy - Communication -->
+    <div class="col">
+      <div class="border rounded p-3 shadow-sm position-relative">
+        <h5>
+          <span class="badge bg-warning text-dark">Collaboration</span>
+          <span class="position-absolute top-0 end-0 me-2 mt-2 fs-4">🥇</span>
+        </h5>
+        <div class="progress mt-2">
+          <div class="progress-bar bg-dark" style="width: 90%;">83%</div>
+        </div>
+        <small class="text-muted">Ability to collaborate with others</small>
+      </div>
+    </div>
+
+    <!-- Gold Trophy Tie - Innovation -->
+    <div class="col">
+      <div class="border rounded p-3 shadow-sm position-relative">
+        <h5>
+          <span class="badge bg-warning text-dark">Innovation</span>
+          <span class="position-absolute top-0 end-0 me-2 mt-2 fs-4">🥇</span>
+        </h5>
+        <div class="progress mt-2">
+          <div class="progress-bar bg-dark" style="width: 85%;">83%</div>
+        </div>
+        <small class="text-muted">Innovatove thinking, presentation of new ideas</small>
+      </div>
+    </div>
+
+    <!-- Silver Trophy - Teamwork -->
+    <div class="col">
+      <div class="border rounded p-3 shadow-sm position-relative">
+        <h5>
+          <span class="badge bg-warning text-dark">Teamwork</span>
+          <span class="position-absolute top-0 end-0 me-2 mt-2 fs-4">🥈</span>
+        </h5>
+        <div class="progress mt-2">
+          <div class="progress-bar bg-dark" style="width: 80%;">80%</div>
+        </div>
+        <small class="text-muted">Ability to work in team, with team members, under team leadership</small>
+      </div>
+    </div>
+
+
+    <!-- Skill 4 - Conflict resolution -->
+<div class="col">
+  <div class="border rounded p-3 shadow-sm position-relative">
+    <h5>
+      <span class="badge bg-warning text-dark">🥉Conflict Resolution</span>
+    </h5>
+    <div class="progress mt-2">
+      <div class="progress-bar bg-dark" style="width: 75%;">75%</div>
+    </div>
+    <small class="text-muted">Ability to resolve workplace issues, evaluate options, make sound decisions based on multiple inputs</small>
+  </div>
+</div>
+
+    <!-- Skill 5 - No Trophy -->
+<div class="col">
+  <div class="border rounded p-3 shadow-sm position-relative">
+    <h5>
+      <span class="badge bg-warning text-dark">Communication</span>
+    </h5>
+    <div class="progress mt-2">
+      <div class="progress-bar bg-dark" style="width: 33%;">33%</div>
+    </div>
+    <small class="text-muted">Ability to present, write about technical issues</small>
+  </div>
+</div>
+
+<div class="col">
+  <div class="border rounded p-3 shadow-sm position-relative">
+    <h5>
+      <span class="badge bg-warning text-dark">Testing</span>
+    </h5>
+    <div class="progress mt-2">
+      <div class="progress-bar bg-dark" style="width: 15%;">15%</div>
+    </div>
+    <small class="text-muted">Ability to verify test case usefulness, product design feasibility</small>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<div class="container mt-5">
+  <h3 class="mb-4 text-center">🤖 Top 3 AI-Related Skills Employers Want</h3>
+
+  <div id="aiSkillsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Skill 1: AI Capability -->
+      <div class="carousel-item active">
+        <div class="p-4 border rounded shadow-sm text-center bg-light">
+          <h4 class="text-warning">🥇 AI Literacy</h4>
+          <p class="lead">Ability to effectively use AI to assist in the development process.</p>
+          <small class="text-muted">“We want grads who can use AI responsibly—and effectively.”</small>
+        </div>
+      </div>
+
+      <!-- Skill 2: Independent code development -->
+      <div class="carousel-item">
+        <div class="p-4 border rounded shadow-sm text-center bg-light">
+          <h4 class="text-warning">🥈 Software Development Skills</h4>
+          <p class="lead">Ability to develop code independently, without AI.</p>
+          <small class="text-muted">“We watch for over-reliance on AI in interviews.”</small>
+        </div>
+      </div>
+
+      <!-- Skill 3: Confidence over AI, analysis -->
+      <div class="carousel-item">
+        <div class="p-4 border rounded shadow-sm text-center bg-light">
+          <h4 class="text-warning">🥈 Critical Analysis, AI Generated Content</h4>
+          <p class="lead">Confidence in Ability To Discern problems in AI Generated Code.</p>
+          <small class="text-muted">“Analysis skills and technical awareness are musts for anyone working with AI.”</small>
+        </div>
+      </div>
+
+ <!-- Skill 4: Confidence over AI, refactoring -->
+      <div class="carousel-item">
+        <div class="p-4 border rounded shadow-sm text-center bg-light">
+          <h4 class="text-warning">🥈 Critical Refactoring, AI Generated Content</h4>
+          <p class="lead">Confidence in Ability To Modify AI Generated Code, Remove Unnecessary Parts, Problematic Elements.</p>
+          <small class="text-muted">“AI generated code can be buggy, suffer from code-bloat and inefficiencies”</small>
+        </div>
+      </div>
+
+ <!-- Skill 5: Confidence over AI, business, intellectual property considerations -->
+      <div class="carousel-item">
+        <div class="p-4 border rounded shadow-sm text-center bg-light">
+          <h4 class="text-warning">🥉 Awareness of Business Needs, Intellectual Property, AI Generated Content</h4>
+          <p class="lead">Ability to evaluate issues related to business needs, security, licensing and IP, in AI content.</p>
+          <small class="text-muted">“The law has not caught up with AI, but it will!”</small>
+        </div>
+      </div>
+  
+
+ <!-- Skill 6: testing -->
+      <div class="carousel-item">
+        <div class="p-4 border rounded shadow-sm text-center bg-light">
+          <h4 class="text-warning">Ability To Build Strong test Cases, AI Generated Content</h4>
+          <p class="lead">AI content may have considerable bugs.</p>
+          <small class="text-muted">“Testing is still animportant consideration in delivering robust software, and should be scrutinized for errors and stress and regression tested”</small>
+        </div>
+      </div>
+    
+
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#aiSkillsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#aiSkillsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- Make sure Bootstrap JS is included -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</div>
+
+
+
+
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    <!-- Discussion Section -->
+    <div class="discussion-section">
+      <h3>💬 Discussion</h3>
+      <ul>
+        <li>How can universities better prepare students for evolving tech landscapes?</li>
+        <li>What role should AI literacy play in undergraduate IT programs?</li>
+        <li>Are traditional degrees losing ground to certifications and bootcamps?</li>
+      </ul>
+    </div>
+
+    <!-- Poll Links -->
+
+
+
+    <!-- Additional modals and other non-visible content -->
+     <!-- Modal -->
+<div class="modal fade" id="assistsModal" tabindex="-1" aria-labelledby="assistsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-warning">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="assistsModalLabel">Develop Assists</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Developers commonly use:
+        <ul>
+          <li>AI engines, like CoPilot</li>
+          <li>Search engines, like Google</li>
+          <li>Software development templates (skeleton code) developed by the organization</li>
+          <li>Project and team leader code reviews</li>
+          <li>Peer code reviews</li>
+        </ul>
+        <p class="mt-2 text-muted">Some also value familiarity with frameworks like React, Django, or Spring Boot.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="devroleModal" tabindex="-1" aria-labelledby="devroleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-warning">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="assistsModalLabel">Develop Assists</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Developers could be:
+        <ul>
+          <li>Software developes are responsible solely for the creation of robust code, developed in accordance with organization protocols. This code should eb developed independently of UI/UX considerations</li>
+          <li>Search engines, like Google</li>
+          <li>Software developers are responsible for communicating with/engaging with the UI/UX design team, and implementing the ideal design for the product</li>
+        </ul>
+        <p class="mt-2 text-muted">Some also value familiarity with frameworks like React, Django, or Spring Boot.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
