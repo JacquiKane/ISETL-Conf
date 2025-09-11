@@ -70,9 +70,59 @@
       background-color: #fff;
       padding: 1.5rem;
     }
-  </style>
 
+.quote-card {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      border-left: 6px solid #CEB888; /* Purdue Gold */
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      color: #000000; /* Purdue Black */
+      font-family: 'Georgia', serif;
+    }
+    .quote-icon {
+      font-size: 2rem;
+      color: #CEB888;
+    }
+    .quote-text {
+      font-style: italic;
+      font-size: 1.25rem;
+      margin-top: 15px;
+    }
+    .quote-author {
+      text-align: right;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #A69F98; /* Warm Gray */
+    }
+
+    .quote-card {
+      background-color: #fff;
+      border-left: 5px solid #CEB888; /* Purdue Gold */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      font-family: 'Georgia', serif;
+    }
+    .quote-text {
+      font-style: italic;
+      font-size: .9rem;
+      color: #000000; /* Purdue Black */
+    }
+    .prediction-card {
+      background-color: #fff;
+      border-left: 5px solid #CEB888; /* Purdue Gold */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      font-family: 'Georgia', serif;
+      color: #000000; /* Purdue Black */
+    }
+
+
+  </style>
 </head>
+
 <body>
 
   <div class="purdue-header">
@@ -319,7 +369,7 @@
         <div class="progress mt-2">
           <div class="progress-bar bg-dark" style="width: 85%;">83%</div>
         </div>
-        <small class="text-muted">Innovatove thinking, presentation of new ideas</small>
+        <small class="text-muted">Innovative thinking, presentation of new ideas</small>
       </div>
     </div>
 
@@ -378,6 +428,19 @@
 
   </div>
 </div>
+
+<!-- special quote -->
+
+<div class="quote-card">
+    <div class="quote-icon">❝</div>
+    <div class="quote-text">
+      "During the interview process we are trying to identify passion. Passion for software engineering and technology, helps the developers to be better at what they do.."
+    </div>
+    <div class="quote-author">– Indianapolis Employer</div>
+  </div>
+
+<!-- end special quote -->
+
 
 <div class="container mt-5">
   <h3 class="mb-4 text-center">🤖 Top 3 AI-Related Skills Employers Want</h3>
@@ -460,7 +523,68 @@
 </div>
 
 
+  <div class="container py-5">
+    <h2 class="mb-4 text-center">Thoughts on AI in Software Development</h2>
+    
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="quote-card">
+          <p class="quote-text">"It is used as an enhancement/guide but all code is human centered, tech enables. Everything is review and tested by us."</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="quote-card">
+          <p class="quote-text">"Still too many errors to trust AI "</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="quote-card">
+          <p class="quote-text">"It has reduced cognitive load when writing code. We still find that AI makes mistakes and human review is required (not blindly trusting the result) but we've found it is generally easier to review a mostly correct piece of code than to handcraft the same code Finding the AI tools are particularly useful as people jump between project domains and coding languages "</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="quote-card">
+          <p class="quote-text">"the majority of software developed is for maintenance or small features. LLM and the ability to ask the LLM to create a code base for a specific spec, becomes a prompt engineering challenge. So we expect developers jump start their code using Co-pilot and such and then continue with the current devops methodology."</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="quote-card">
+          <p class="quote-text">"AI has transformed the software development process, streamlining workflows, enhancing productivity, and pushing the boundaries of what's possible. The largest impact is in code generation and assistance. Debugging and testing have also evolved as the toolsets have evolved - examples include debugging, testing, vulnerability prediction, and recommended fixes."</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Role of developers as AI progresses -->
+  <div class="container py-5">
+    <h2 class="mb-4 text-center">Predictions on the Future Role of Software Developers</h2>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="prediction-card h-100">
+          <p class="quote-text">"You will still need good developers. They will need to understand the overall full scale of the software product which is currently a short fall of the AI models. The AI model is expected to help them become more productive."</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="prediction-card h-100">
+          <p class="quote-text">"Developers will evolve into AI orchestrators—managing models, data pipelines, and ethical frameworks."</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="prediction-card h-100">
+          <p class="quote-text">"Software developers will work more in a distributed toolset environment that will require prompting for code outcomes versus developing lines of code. Relying less on coding knowledge vs. understanding the usage and outcomes."</p>
+        </div>
+      </div>
+        <div class="col">
+        <div class="prediction-card h-100">
+          <p class="quote-text">"We are a human centered tech enabled firm so AI is used as an assistant, but we will not be fully dependent on AI."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- end role of developers -->
 
 
 <!-- Bootstrap JS Bundle -->
@@ -516,10 +640,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Developers could be:
         <ul>
-          <li>Software developes are responsible solely for the creation of robust code, developed in accordance with organization protocols. This code should eb developed independently of UI/UX considerations</li>
-          <li>Search engines, like Google</li>
+          <li>Software developes are responsible solely for the creation of robust code, developed in accordance with organization protocols. This code should be developed independently of UI/UX considerations</li>
           <li>Software developers are responsible for communicating with/engaging with the UI/UX design team, and implementing the ideal design for the product</li>
         </ul>
         <p class="mt-2 text-muted">Some also value familiarity with frameworks like React, Django, or Spring Boot.</p>
