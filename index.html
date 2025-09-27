@@ -5,121 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>21st Century Toolkit for IT Grads</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href = "./styles/isetl.css">
+  <!-- Tooltip Initialization -->
+ 
   <!-- Bootstrap CSS -->
   <style>
-    body {
-      background-color: #f5f5f5;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .purdue-header {
-      background-color: #cba135; /* Purdue Gold */
-      color: #000000; /* Purdue Black */
-      padding: 2rem;
-      text-align: center;
-    }
-    .key-findings {
-      background-color: #ffffff;
-      border: 3px solid #cba135;
-      border-radius: 10px;
-      padding: 2rem;
-      margin-top: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .discussion-section {
-      background-color: #eaeaea;
-      padding: 2rem;
-      margin-top: 2rem;
-      border-left: 5px solid #cba135;
-    }
-    .poll-links a {
-      display: block;
-      margin-bottom: 1rem;
-      color: #cba135;
-      font-weight: bold;
-    }
-    
-  .subtitle {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: flyIn 1.2s ease-out forwards;
-    animation-delay: 0.5s;
-  }
-
-  @keyframes flyIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-    body {
-      background-color: #f5f5f5;
-    }
-    .nav-tabs .nav-link {
-      border: 1px solid #cba135;
-      background-color: #fff;
-      color: #000;
-    }
-    .nav-tabs .nav-link.active {
-      background-color: #cba135;
-      color: #fff;
-    }
-    .tab-content {
-      border: 1px solid #cba135;
-      border-top: none;
-      background-color: #fff;
-      padding: 1.5rem;
-    }
-
-.quote-card {
-      max-width: 600px;
-      margin: 50px auto;
-      padding: 30px;
-      border-left: 6px solid #CEB888; /* Purdue Gold */
-      background-color: #fff;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      color: #000000; /* Purdue Black */
-      font-family: 'Georgia', serif;
-    }
-    .quote-icon {
-      font-size: 2rem;
-      color: #CEB888;
-    }
-    .quote-text {
-      font-style: italic;
-      font-size: 1.25rem;
-      margin-top: 15px;
-    }
-    .quote-author {
-      text-align: right;
-      margin-top: 20px;
-      font-weight: bold;
-      color: #A69F98; /* Warm Gray */
-    }
-
-    .quote-card {
-      background-color: #fff;
-      border-left: 5px solid #CEB888; /* Purdue Gold */
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-      font-family: 'Georgia', serif;
-    }
-    .quote-text {
-      font-style: italic;
-      font-size: .9rem;
-      color: #000000; /* Purdue Black */
-    }
-    .prediction-card {
-      background-color: #fff;
-      border-left: 5px solid #CEB888; /* Purdue Gold */
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-      font-family: 'Georgia', serif;
-      color: #000000; /* Purdue Black */
-    }
-
-
+   
   </style>
 </head>
 
@@ -195,7 +88,7 @@
 </li>
  <li>
     <div class="d-flex justify-content-between align-items-center">
-      <span>Do your developrs trust AI generated code?</span>
+      <span>Do your developers trust AI generated code?</span>
       <div class="progress" style="width: 200px; height: 20px;">
         <div class="progress-bar" role="progressbar" style="width: 48.6%; background-color: #cba135;" aria-valuenow="48.6" aria-valuemin="0" aria-valuemax="100">
           48.6%
@@ -242,7 +135,9 @@
       </div>
     </div>
   </li>
-        <li>What do you envision is the role for your software developers as AI progresses?</li>
+        <li>What do you envision is the role for your software developers as AI progresses?<button type="button" class="btn btn-sm btn-warning ms-2" data-bs-toggle="modal" data-bs-target="#newRolesModal">
+            More Info
+          </button></li>
 
          <li>
     <div class="d-flex justify-content-between align-items-center">
@@ -330,11 +225,11 @@
           <li class="list-group-item">⚠️ Compromise of new product concepts, via insecure cloud storage of developer questions</li>
           <li class="list-group-item">🔐 Developer over-reliance on AI generated code, loss of ability to discern issues and develop code without AI</li>
           <li class="list-group-item">📉 Problems introduced into the code base as a result of AI</li>
-          <li class="list-group-item">🧠 Code bloat, as a result of acceoted/unquestioned AI generated code</li>
+          <li class="list-group-item">🧠 Code bloat, as a result of accepted/unquestioned AI generated code</li>
           <li class="list-group-item">💼 Injection of malicious code</li>
         </ul>
         <hr>
-        <p class="text-muted">These concerns were gathered from interviews with hiring managers across Indianpolis area Purde graduate employers and industry board.</p>
+        <p class="text-muted">These concerns were gathered from interviews with hiring managers across Indianpolis area Purdue graduate employers and industry board.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
@@ -417,7 +312,7 @@
   </div>
 </div>
 
-<div class="col">
+<!-- <div class="col">
   <div class="border rounded p-3 shadow-sm position-relative">
     <h5>
       <span class="badge bg-warning text-dark">Testing</span>
@@ -427,7 +322,7 @@
     </div>
     <small class="text-muted">Ability to verify test case usefulness, product design feasibility</small>
   </div>
-</div>
+</div> -->
 
   </div>
 </div>
@@ -500,7 +395,7 @@
  <!-- Skill 6: testing -->
       <div class="carousel-item">
         <div class="p-4 border rounded shadow-sm text-center bg-light">
-          <h4 class="text-warning">Ability To Build Strong test Cases, AI Generated Content</h4>
+          <h4 class="text-warning">Ability to build strong test cases, AI generated content & other</h4>
           <p class="lead">AI content may have considerable bugs.</p>
           <small class="text-muted quote-text">Testing is still an important consideration in delivering robust software, and should be scrutinized for errors and stress and regression tested</small>
         </div>
@@ -531,28 +426,34 @@
     
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
+
         <div class="quote-card">
-          <p class="quote-text">"It is used as an enhancement/guide but all code is human centered, tech enables. Everything is review and tested by us."</p>
+              <div class="quote-icon">❝</div>
+          <p class="quote-text">It is used as an enhancement/guide but all code is human centered, tech enables. Everything is review and tested by us.</p>
         </div>
       </div>
       <div class="col">
         <div class="quote-card">
-          <p class="quote-text">"Still too many errors to trust AI "</p>
+              <div class="quote-icon">❝</div>
+          <p class="quote-text">Still too many errors to trust AI </p>
         </div>
       </div>
       <div class="col">
         <div class="quote-card">
-          <p class="quote-text">"It has reduced cognitive load when writing code. We still find that AI makes mistakes and human review is required (not blindly trusting the result) but we've found it is generally easier to review a mostly correct piece of code than to handcraft the same code Finding the AI tools are particularly useful as people jump between project domains and coding languages "</p>
+              <div class="quote-icon">❝</div>
+          <p class="quote-text">It has reduced cognitive load when writing code. We still find that AI makes mistakes and human review is required (not blindly trusting the result) but we've found it is generally easier to review a mostly correct piece of code than to handcraft the same code Finding the AI tools are particularly useful as people jump between project domains and coding languages</p>
         </div>
       </div>
       <div class="col">
         <div class="quote-card">
-          <p class="quote-text">"the majority of software developed is for maintenance or small features. LLM and the ability to ask the LLM to create a code base for a specific spec, becomes a prompt engineering challenge. So we expect developers jump start their code using Co-pilot and such and then continue with the current devops methodology."</p>
+              <div class="quote-icon">❝</div>
+          <p class="quote-text">The majority of software developed is for maintenance or small features. LLM and the ability to ask the LLM to create a code base for a specific spec, becomes a prompt engineering challenge. So we expect developers jump start their code using Co-pilot and such and then continue with the current devops methodology.</p>
         </div>
       </div>
       <div class="col">
         <div class="quote-card">
-          <p class="quote-text">"AI has transformed the software development process, streamlining workflows, enhancing productivity, and pushing the boundaries of what's possible. The largest impact is in code generation and assistance. Debugging and testing have also evolved as the toolsets have evolved - examples include debugging, testing, vulnerability prediction, and recommended fixes."</p>
+              <div class="quote-icon">❝</div>
+          <p class="quote-text">AI has transformed the software development process, streamlining workflows, enhancing productivity, and pushing the boundaries of what's possible. The largest impact is in code generation and assistance. Debugging and testing have also evolved as the toolsets have evolved - examples include debugging, testing, vulnerability prediction, and recommended fixes.</p>
         </div>
       </div>
     </div>
@@ -565,22 +466,26 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="prediction-card h-100">
-          <p class="quote-text">"You will still need good developers. They will need to understand the overall full scale of the software product which is currently a short fall of the AI models. The AI model is expected to help them become more productive."</p>
+              <div class="quote-icon">❝</div>
+          <p class="quote-text">You will still need good developers. They will need to understand the overall full scale of the software product which is currently a short fall of the AI models. The AI model is expected to help them become more productive.</p>
         </div>
       </div>
       <div class="col">
         <div class="prediction-card h-100">
-          <p class="quote-text">"Developers will evolve into AI orchestrators—managing models, data pipelines, and ethical frameworks."</p>
+              <div class="quote-icon">❝</div>
+          <p class="quote-text">Developers will evolve into AI orchestrators—managing models, data pipelines, and ethical frameworks.</p>
         </div>
       </div>
       <div class="col">
         <div class="prediction-card h-100">
-          <p class="quote-text">"Software developers will work more in a distributed toolset environment that will require prompting for code outcomes versus developing lines of code. Relying less on coding knowledge vs. understanding the usage and outcomes."</p>
+              <div class="quote-icon">❝</div>
+          <p class="quote-text">Software developers will work more in a distributed toolset environment that will require prompting for code outcomes versus developing lines of code. Relying less on coding knowledge vs. understanding the usage and outcomes.</p>
         </div>
       </div>
         <div class="col">
         <div class="prediction-card h-100">
-          <p class="quote-text">"We are a human centered tech enabled firm so AI is used as an assistant, but we will not be fully dependent on AI."</p>
+              <div class="quote-icon">❝</div>
+          <p class="quote-text">We are a human centered tech enabled firm so AI is used as an assistant, but we will not be fully dependent on AI.</p>
         </div>
       </div>
     </div>
@@ -589,9 +494,42 @@
 
   <!-- end role of developers -->
 
+  <!-- Curricular Solar System -->
+   <div class = "constellation_container">
+  <div class="solar-title">
+    21st Century Toolkit: IT Graduate Success Constellation
+  </div>
 
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="solar-system">
+ <div class="core" data-bs-toggle="tooltip" data-bs-placement="top" title="Foundational courses in programming, software engineering, databases, and systems.">
+      Core<br>Curriculum
+    </div>
+    <div class="orbit orbit-1"></div>
+    <div class="orbit orbit-2"></div>
+    <div class="orbit orbit-3"></div>
+
+    <div class="planet industry" data-bs-toggle="tooltip" data-bs-placement="top" title="Experience through internships, employer feedback, and industry projects.">
+      Industry<br>Integration
+    </div>
+
+    <div class="planet softskills" data-bs-toggle="tooltip" data-bs-placement="top" title="Communication, teamwork, empathy, and leadership skills for collaborative development. Software applications for non-profits, hobbies, movements.">
+      Soft<br>Skills
+    </div>
+
+    <div class="planet ai" data-bs-toggle="tooltip" data-bs-placement="top" title="AI tools, machine learning, prompt engineering, and ethical AI use in development.">
+      AI<br>Integration
+    </div>
+
+    <div class="satellite tooling">Modern<br>Tooling</div>
+    <div class="satellite devops">DevOps</div>
+    <div class="satellite cyber">Cyber</div>
+    <div class="satellite cloud">Cloud<br>Computing</div>
+    <div class="satellite emerging">Emerging<br>Tech</div>
+  </div>
+  </div>
+  <!-- End Curricular Solar System -->
+
+
 </body>
 </html>
     <!-- Discussion Section -->
@@ -624,8 +562,7 @@
           <li>AI engines, like CoPilot</li>
           <li>Search engines, like Google</li>
           <li>Software development templates (skeleton code) developed by the organization</li>
-          <li>Project and team leader code reviews</li>
-          <li>Peer code reviews</li>
+          <li>Code reviews</li>
         </ul>
         <p class="mt-2 text-muted">The Agile framework is also considered an assist, in addition to specific company protocols, or use of specific company resources like technical publications, templates for developing code, and peer support.</p>
       </div>
@@ -635,6 +572,32 @@
     </div>
   </div>
 </div>
+
+
+<div class="modal fade" id="newRolesModal" tabindex="-1" aria-labelledby="newRolesModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-warning">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="assistsModalLabel">Developer Roles</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        What lies ahead for software developer roles?
+        <ul>
+          <li>Good developers still needed! They should become more productive with AI</li>
+          <li>AI orchestrators, managing models and frameworks</li>
+          <li>Distributed toolset environment, prompting for code outcomes versus developing lines of code.</li>
+          <li>Relying less on coding knowledge vs. understanding the usage and outcomes."</li>
+        </ul>
+        <p class="mt-2 text-muted font-italic">"You will still need good developers. They will need to understand the overall full scale of the software product which is currently a short fall of the AI models. The AI model is expected to help them become more productive"</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="modal fade" id="devroleModal" tabindex="-1" aria-labelledby="devroleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -660,3 +623,13 @@
     </div>
   </div>
 </div>
+
+ <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+      tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    });
+  </script>

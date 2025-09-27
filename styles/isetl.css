@@ -1,0 +1,247 @@
+    .constellation_container {
+      background-color: #f8f9fa;
+      padding-top: 40px;
+      text-align: center;
+    }
+
+    .solar-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #000;
+      background-color: #CEB888;
+      padding: 8px 16px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .solar-system {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      margin: 0 auto;
+      border: 2px solid #000;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    .orbit {
+      position: absolute;
+      border: 2px dashed #A89F91;
+      border-radius: 50%;
+    }
+
+    .orbit-1 {
+      width: 200px;
+      height: 200px;
+      top: 200px;
+      left: 200px;
+    }
+
+    .orbit-2 {
+      width: 300px;
+      height: 300px;
+      top: 150px;
+      left: 150px;
+    }
+
+    .orbit-3 {
+      width: 450px;
+      height: 450px;
+      top: 75px;
+      left: 75px;
+    }
+
+    .planet, .satellite {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 5px;
+    }
+
+    .planet {
+      background-color: #CEB888;
+      color: #000;
+    }
+
+    .satellite {
+      background-color: #A89F91;
+      color: #fff;
+      width: 75px;
+      height: 75px;
+    }
+
+    .core {
+      position: absolute;
+      top: 250px;
+      left: 250px;
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .planet.industry {
+      top: 200px;
+      left: 350px;
+    }
+
+    .planet.softskills {
+      top: 100px;
+      left: 400px;
+    }
+
+    .planet.ai {
+      top: 25px;
+      left: 275px;
+    }
+
+    .satellite.tooling {
+      top: 400px;
+      left: 100px;
+    }
+
+    .satellite.devops {
+      top: 450px;
+      left: 300px;
+    }
+
+    .satellite.cyber {
+      top: 150px;
+      left: 50px;
+    }
+
+    .satellite.cloud {
+      top: 350px;
+      left: 450px;
+    }
+
+    .satellite.emerging {
+      top: 500px;
+      left: 200px;
+    }
+     body {
+      background-color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .purdue-header {
+      background-color: #cba135; /* Purdue Gold */
+      color: #000000; /* Purdue Black */
+      padding: 2rem;
+      text-align: center;
+    }
+    .key-findings {
+      background-color: #ffffff;
+      border: 3px solid #cba135;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .discussion-section {
+      background-color: #eaeaea;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-left: 5px solid #cba135;
+    }
+    .poll-links a {
+      display: block;
+      margin-bottom: 1rem;
+      color: #cba135;
+      font-weight: bold;
+    }
+    
+  .subtitle {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: flyIn 1.2s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes flyIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+    body {
+      background-color: #f5f5f5;
+    }
+    .nav-tabs .nav-link {
+      border: 1px solid #cba135;
+      background-color: #fff;
+      color: #000;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #cba135;
+      color: #fff;
+    }
+    .tab-content {
+      border: 1px solid #cba135;
+      border-top: none;
+      background-color: #fff;
+      padding: 1.5rem;
+    }
+
+.quote-card {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      border-left: 6px solid #CEB888; /* Purdue Gold */
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      color: #000000; /* Purdue Black */
+      font-family: 'Georgia', serif;
+    }
+    .quote-icon {
+      font-size: 2rem;
+      color: #CEB888;
+    }
+    .quote-text {
+      font-style: italic;
+      font-size: 1.25rem;
+      margin-top: 15px;
+    }
+    .quote-author {
+      text-align: right;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #A69F98; /* Warm Gray */
+    }
+
+    .quote-card {
+      background-color: #fff;
+      border-left: 5px solid #CEB888; /* Purdue Gold */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      font-family: 'Georgia', serif;
+    }
+    .quote-text {
+      font-style: italic;
+      font-size: .9rem;
+      color: #000000; /* Purdue Black */
+    }
+    .prediction-card {
+      background-color: #fff;
+      border-left: 5px solid #CEB888; /* Purdue Gold */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      font-family: 'Georgia', serif;
+      color: #000000; /* Purdue Black */
+    }
+
