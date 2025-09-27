@@ -245,3 +245,64 @@
       color: #000000; /* Purdue Black */
     }
 
+     .card_container {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 420px;
+    }
+
+
+     .card {
+      width: 400px;
+      border: 2px solid #000000;
+      border-radius: 10px;
+      background-color: #FFFFFF;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+  .logo {
+      width: 120px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 1rem;
+      color: #A89F91;
+      margin-bottom: 15px;
+    }
+
+    .department {
+      font-size: 1rem;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: #CEB888;
+      text-align: center;
+    }
+
+
