@@ -305,4 +305,15 @@
       text-align: center;
     }
 
+.lightbulb-button {
+  font-size: 60px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lightbulb-button:hover {
+  transform: scale(1.2);
+}
 

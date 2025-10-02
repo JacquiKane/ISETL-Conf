@@ -498,7 +498,11 @@
   <div class="solar-title">
     21st Century Toolkit: IT Graduate Success Constellation
   </div>
-
+  <div class="lightbulb-container">
+    <button type = "button" id="lightbulbBtn" class="lightbulb-button" data-bs-toggle = "modal" data-bs-target="#lightbulbmodal">
+      💡
+    </button>
+  </div>
   <div class="solar-system">
  <div class="core" data-bs-toggle="tooltip" data-bs-placement="top" title="Foundational courses in programming, software engineering, databases, and systems.">
       Core<br>Curriculum
@@ -639,6 +643,35 @@
   </div>
 </div>
 
+ <!-- Modal for lightbulb -->
+<div class="modal fade" id="lightbulbmodal" tabindex="-1" aria-labelledby="lightbulbLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content border-warning">
+      <div class="modal-header bg-warning text-dark">
+        <h5 class="modal-title" id="assistsModalLabel">Industry Ready, Day 1!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Core curriculum, traditional analysis </li>
+          <li>Employer input, employer guest visits, regular employer surveys, internships, externships for faculty</li>
+          <li>Service Learning, Summer programs, Apps for non-profits & other</li>
+          <li>Ethics & leadership modelling</li>
+          <li>Faculty modelling collaboration, teamwork, professionalism</li>
+          <li>AI as a tool, Ethical use of AI</li>
+        </ul>
+        <p class="mt-2 text-muted font-italic">"You’re going to want to be creative. You’re going to want to be [good at] critical thinking. And you’re going to want to be flexible..” Matt Garman, AWS CEO</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
  <script>
     document.addEventListener('DOMContentLoaded', function () {
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
@@ -647,6 +680,7 @@
         new bootstrap.Tooltip(tooltipTriggerEl);
       });
     });
+
 
   </script>
 
